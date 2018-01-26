@@ -5,14 +5,13 @@ function setup() {
 function draw() {
 	background(50,50,255);
 	var h = hour();
-	text('Current hour:\n' + h, 5, 50);
+	text('Current hour:\n' + h, 5, 20);
 	var m = minute();
 	text('Current minute:\n'+ m, 5, 60);
 	var s = second();
-	text('Current second:\n'+ s, 5, 70);
-
-	ellipse(300, 300, 100, 100)
-
+	text('Current second:\n'+ s, 5, 100);
 	var clock_sec = map(s, 0, width, 100, 500)
-	rect(clock_sec, 25, 25, 25)
+
+	rect(25, 25, 100, clock_sec)
+	ellipse(100, 25, clock_sec)
 }
