@@ -6,7 +6,6 @@ function setup() {
 function draw() {
 
 	textSize(32)
-	textStyle(BOLD);
 	text('WHAT TIME IS IT?', 5, 30)
 
 	var h = hour();
