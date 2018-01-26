@@ -8,7 +8,6 @@ function draw() {
 	textStyle(Bold);
 	text('WHAT TIME IS IT?', 5, 30)
 
-	textSize(10);
 	var h = hour();
 	text('Hour:\n' + h, 5, 50);
 	var m = minute();
