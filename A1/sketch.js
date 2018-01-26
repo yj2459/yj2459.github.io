@@ -13,5 +13,6 @@ function draw() {
 	var clock_sec = map(s, 0, width, 100, 500)
 
 	rect(25, 25, 100, clock_sec * 3)
+	fill(255,255,0)
 	ellipse(260, 25, clock_sec * 2)
 }
