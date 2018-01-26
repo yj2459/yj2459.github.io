@@ -3,6 +3,7 @@ function setup() {
 }
 
 function draw() {
+	background(50,50,255)
 	var h = hour();
 	text('Current hour:\n' + h, 5, 50);
 	var m = minute();
