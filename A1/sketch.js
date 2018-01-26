@@ -29,7 +29,7 @@ function draw() {
 	push();
 	fill(255,255,0);
 
-	translate(width*(2/3), height/2);
+	// translate(width*(2/3), height/2);
 	ellipse(150, 150, 100, 100);
 
 	fill(255);
