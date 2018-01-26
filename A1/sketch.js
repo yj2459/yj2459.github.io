@@ -12,6 +12,6 @@ function draw() {
 	text('Current second:\n'+ s, 5, 100);
 	var clock_sec = map(s, 0, width, 100, 500)
 
-	rect(25, 25, 100, clock_sec)
-	ellipse(100, 25, clock_sec)
+	rect(25, 25, 100, clock_sec * 3)
+	ellipse(260, 25, clock_sec * 2)
 }
