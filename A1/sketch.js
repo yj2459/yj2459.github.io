@@ -35,7 +35,4 @@ function draw() {
 	rotate(clock_sec, 3.0);
 	rect(150, 150, 8, 80);
 	pop();
-	
-
-
 }
