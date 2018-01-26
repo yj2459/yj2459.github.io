@@ -6,11 +6,11 @@ function setup() {
 function draw() {
 
 	textSize(32)
-	textStyle(Bold);
+	textStyle(BOLD);
 	text('WHAT TIME IS IT?', 5, 30)
 
 	var h = hour();
-	text('Current hour:\n' + h, 5, 50);
+	text('Hour:\n' + h, 5, 50);
 	var m = minute();
 	text('Minute:\n'+ m, 5, 100);
 	var s = second();
