@@ -4,10 +4,7 @@ function setup() {
 }
 
 function draw() {
-
-	textSize(32)
-	text('WHAT TIME IS IT?', 5, 30)
-
+	
 	var h = hour();
 	text('Hour:\n' + h, 5, 50);
 	var m = minute();
