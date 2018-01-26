@@ -6,13 +6,13 @@ function draw() {
 	background(60,50,255);
 
 	fill(0);
-	textSize(32);
-	textStyle(Bold);
-	text('What time is it?', 5, 30);
+	// textSize(32);
+	// textStyle(Bold);
+	// text('What time is it?', 5, 30);
 
 	textSize(10);
 	var h = hour();
-	text('Hour:\n' + h, 5, 70);
+	text('Current hour:\n' + h, 5, 70);
 	var m = minute();
 	text('Minute:\n'+ m, 5, 100);
 	var s = second();
