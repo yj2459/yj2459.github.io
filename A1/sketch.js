@@ -6,6 +6,7 @@ function draw() {
 	background(50,50,255);
 	fill(0);
 	textSize(32);
+	text('What time is it?', 5, 10);
 	var h = hour();
 	text('Current hour:\n' + h, 5, 30);
 	var m = minute();
