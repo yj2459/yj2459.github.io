@@ -26,8 +26,8 @@ function draw() {
 	fill(255,255,0)
 
 	translate(width*(2/3), height/2)
-	ellipse(150, 150, 500, 500)
-	
+	ellipse(150, 150, 100, 100)
+
 	fill(255)
 	rotate(clock_sec / 3.0)
 	rect(150, 150, 8, 80)
