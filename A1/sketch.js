@@ -4,7 +4,6 @@ function setup() {
 
 function draw() {
 	background(50,50,255);
-	fill(0);
 	textSize(32)
 	textStyle(Bold);
 	text('WHAT TIME IS IT?', 5, 30)
