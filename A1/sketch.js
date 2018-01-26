@@ -6,17 +6,18 @@ function draw() {
 	background(50,50,255);
 	fill(0);
 	textSize(32);
+	textStyle(Bold);
 	text('What time is it?', 5, 30);
 	textSize(10)
 	var h = hour();
-	text('Current hour:\n' + h, 5, 30);
+	text('Hour:\n' + h, 5, 70);
 	var m = minute();
-	text('Current minute:\n'+ m, 5, 80);
+	text('Minute:\n'+ m, 5, 100);
 	var s = second();
-	text('Current second:\n'+ s, 5, 110);
-	var clock_hr = map(h, 0, 12, 0, 12)
-	var clock_sec = map(s, 0, width, 100, 500);
-	var clock_min = map(m, 0, 60, 0, 60);
+	text('Second:\n'+ s, 5, 130);
+	var clock_hr = map(h, 0, width, 0, 100)
+	var clock_min = map(m, 0, width, 0, 100);
+	var clock_sec = map(s, 0, width, 0, 100);
 
 	rect(100, 50, clock_hr, 25)
 	rect(100, 80, clock_min, 25)
@@ -24,11 +25,12 @@ function draw() {
 
 	fill(255,255,0)
 
-	ellipse(width*(2/3), height/2, 250, 250)
+	translate(width*(2/3), height/2)
+	ellipse(150, 150, 500)
 	
 	fill(255)
-	rotate(clock_min / 3.0)
-	rect(width*(2/3), height/2, 10, 80)
+	rotate(clock_sec / 0.0)
+	rect(150, 150, 8, 80)
 
 
 }
