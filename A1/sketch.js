@@ -7,8 +7,8 @@ function draw() {
 	var h = hour();
 	text('Current hour:\n' + h, 5, 50);
 	var m = minute();
-	text('Current minute:\n'+ m, 5, 100);
+	text('Current minute:\n'+ m, 5, 50);
 	var s = second();
-	text('Current second:\n'+ s, 5, 150);
+	text('Current second:\n'+ s, 5, 50);
 
 }
