@@ -16,8 +16,8 @@ function draw() {
 	var s = second();
 	text('Second:\n'+ s, 5, 150);
 
-	var clock_hr = map(h, 0, width, 0, 100);
-	var clock_min = map(m, 0, width, 0, 100);
+	var clock_hr = map(h, 0, width, 0, width);
+	var clock_min = map(m, 0, width, 0, 6);
 	var clock_sec = map(s, 0, width, 0, 100);
 
 	rect(100, 50, clock_hr, 25);
