@@ -17,7 +17,6 @@ function draw() {
 
 	line(50, 50, 90, 50, 50)
 
-	#these are lines for reference
 	var Sline = line(50, 50, 90, 50, 50)
 	var Dline = line(50, 390, 90, 390, 50)
 	arrayCopy(Sline, Dline, [60])
