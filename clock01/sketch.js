@@ -3,7 +3,7 @@ function setup() {
 }
 
 function draw() {
-	background(0);
+	background(255);
 	var h = hour();
 	var m = minute();
 	var s = second();
