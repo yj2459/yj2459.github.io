@@ -15,10 +15,11 @@ function draw() {
 	rect(140, 20, 500, 400)
 	rect(660, 20, 200, 400)
 
+	line(50, 50, 90, 50, 50)
+
 	#these are lines for reference
 	var Sline = line(50, 50, 90, 50, 50)
 	var Dline = line(50, 390, 90, 390, 50)
-
 	arrayCopy(Sline, Dline, [60])
 
 
