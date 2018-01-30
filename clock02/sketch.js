@@ -8,6 +8,8 @@ function draw() {
 	var m = minute();
 	var s = second();
 
+	// 2nd clock
+
 	var color_opacity = map(s, 0, 60, 0, 60)
 	
 	fill(0, 0, 0, 20)
@@ -20,6 +22,8 @@ function draw() {
 	var Sline = line(50, 50, 90, 50, 50)
 	var Dline = line(50, 390, 90, 390, 50)
 	arrayCopy(Sline, Dline, [60])
+
+
 
 
 
