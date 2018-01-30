@@ -10,18 +10,18 @@ function draw() {
 
 	// 2nd clock
 
-	var color_opacity = map(s, 0, 60, 0, 60)
+	var color_opacity = map(s, 0, 60, 255, 0)
 	
-	fill(0, 0, 0, 20)
+	fill(color_opacity)
 	rect(20, 20, 100, 400)
 	rect(140, 20, 500, 400)
 	rect(660, 20, 200, 400)
 
-	line(50, 50, 90, 50, 50)
+	// line(50, 50, 90, 50, 50)
 
-	var Sline = line(50, 50, 90, 50, 50)
-	var Dline = line(50, 390, 90, 390, 50)
-	arrayCopy(Sline, Dline, [60])
+	// var Sline = line(50, 50, 90, 50, 50)
+	// var Dline = line(50, 390, 90, 390, 50)
+	// arrayCopy(Sline, Dline, [60])
 
 
 
