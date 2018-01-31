@@ -19,9 +19,6 @@ function draw() {
 	text(':', 110, 30);
 	text(s, 140, 30);
 
-	fill(0);
-	ellipse(98, 60, 5, 5);
-
 	var color_opacity = map(s, 0, 60, 255, 0);
 	
 	fill(color_opacity);
@@ -29,7 +26,8 @@ function draw() {
 	triangle(70,115,98,60,126,115);
 
 
-	if (m<=20){
+	if (0<m<=20){
+		strokeWeight(3);
 		line(98, 60, 98 + (28/20)*m, 60 + (55/20)*m);
 	} else if (20<<m<=40){
 		strokeWeight(3);
@@ -42,7 +40,9 @@ function draw() {
 		line(70, 115, 70 + (28/20)*(m-40), 115 - (55/20)*(m-40));
 	}
 
-
+	fill(255, 20, 250);
+	noStroke()
+	ellipse(98, 60, 7, 7);
 
 
 
