@@ -15,11 +15,6 @@ function draw() {
 
 	// 2nd clock
 
-	// var color_opacity1 = map(s, 0, 60, 255, 0);
-	// var color_opacity2 = map(s, 0, 60, 234, 24);
-	// var color_opacity3 = map(s, 0, 60, 235, 66);
-
-
 
 	strokeWeight(1);
 	line(30, 25+ s*3, 70, 25+ s*3);
@@ -32,9 +27,7 @@ function draw() {
 	if (0<=h<=4){
 	fill(0);
 	rect(640 + h*35, 35, 30, 30);
-	}
-
-	if (5<=h<=8){
+	} else if (5<=h<=8){
 	fill(0);
 	// var n = [1,2,3,4];
 	// rect(600 + n*35, 35, 30, 30);
@@ -43,9 +36,7 @@ function draw() {
 	rect(640 + 3*35, 35, 30, 30);
 	rect(640 + 4*35, 35, 30, 30);
 	rect(640 + h*35, 70, 30, 30);
-	}
-
-	if (9<=h<=12){
+	} else if (9<=h<=12){
 	fill(0);
 	// var n = [1,2,3,4];
 	// rect(600 + n*10, 35, 30, 30);
@@ -60,9 +51,7 @@ function draw() {
 	rect(640 + 3*35, 70, 30, 30);
 	rect(640 + 4*35, 70, 30, 30);
 	rect(640 + h*35, 105, 30, 30);
-	}
-
-	if (13<=h<=16){
+	} else if (13<=h<=16){
 	fill(0);
 	rect(640 + 1*35, 35, 30, 30);
 	rect(640 + 2*35, 35, 30, 30);
@@ -77,9 +66,7 @@ function draw() {
 	rect(640 + 3*35, 105, 30, 30);
 	rect(640 + 4*35, 105, 30, 30);
 	rect(640 + h*35, 140, 30, 30);
-	}
-
-	if (17<=h<=20){
+	} else if (17<=h<=20){
 	fill(0);
 	rect(640 + 1*35, 35, 30, 30);
 	rect(640 + 2*35, 35, 30, 30);
@@ -98,9 +85,7 @@ function draw() {
 	rect(640 + 3*35, 140, 30, 30);
 	rect(640 + 4*35, 140, 30, 30);
 	rect(640 + h*35, 175, 30, 30);
-	}
-
-	if (21<=h<=24){
+	} else if (21<=h<=24){
 	fill(0);
 	rect(640 + 1*35, 35, 30, 30);
 	rect(640 + 2*35, 35, 30, 30);
@@ -131,16 +116,7 @@ function draw() {
 	fill(220);
 	strokeWeight(1)
 	rect(20, 20, 60, 200);
-	// rect(90, 20, 500, 200);
-	// rect(600, 20, 200, 200);
 	}
 	
-
-	// fill(color_opacity1);
-	// rect(20, 20, 100, 400);
-	// fill(color_opacity2);
-	// rect(140, 20, 500, 400);
-	// fill(color_opacity3);
-	// rect(660, 20, 200, 400);
 
 }
