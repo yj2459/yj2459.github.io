@@ -59,25 +59,18 @@ function drawTriangle(a) {
 	//minute
 	push();
 	if (m>0 && m<=20){
-		// if (0<m<=20){
-		//for (var i = 0; i<=20; i++){
+		//0<m<=20
 		strokeWeight(5);
 		line(x2, y2, x2 + ((x2-x1)/20)*m, y2 + ((y1-y2)/20)*m);
-		//}
 	} else if (m>20 && m<=40){
-		// (20<m<=40){
-		//for (var i = 21; i<=40; i++){
 		strokeWeight(5);
 		line(x2,y2,x3,y3);
-		line(x3, y3, x3 - ((x3-x1)/20)*m, y3);
-		//}
+		line(x3, y3, x3 - ((x3-x1)/20)*(m-20), y3);
 	} else {
-		//for (var i = 41; i<=60; i++){
 		strokeWeight(5);
 		line(x2, y2, x3, y3);
 		line(x3, y3, x1, y1);
 		line(x1, y1, x1 + ((x2-x1)/20)*(m-40), y1 - ((y1-y2)/20)*(m-40));
-		//}
 	}
 	pop();
 
