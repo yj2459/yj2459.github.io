@@ -1,9 +1,14 @@
 //Question :: How to load font ? .ttf
 
+//count text frequency
+//make an array with them
+//when mousePressed, it will be colored in order
+
+
 var myFont;
 var headlines = [];
 var section = [];
-var subsection = [];
+//var subsection = [];
 var maxHeadLen, minHeadLen;
 var hitwords = [
   "World",
@@ -24,7 +29,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(640, 800);
+  createCanvas(1000, 900);
   background(0);
 
   textSize(10);
@@ -43,13 +48,14 @@ function draw() {
   var margin = 40;
   translate(margin, margin);
 
-  var lineheight = 30;
+  var lineheight = 19;
   var rectheight = 8;
 
   for (var i = 0; i < headlines.length; i++) {
-    var words = split(headlines[i], ' ') + split(section[i], ' ') + split(subsection[i], ' ');
+    var wordsH = split(headlines[i], ' ');
+    var wordsS = split(section[i], ' ');
     var nextX = 0;
-    //console.log(words);
+    console.log(wordsS);
 
     // draw rectangle
     // fill(120);
@@ -68,17 +74,32 @@ function draw() {
     //   fill(255);
     // }
 
-    for (var j = 0; j < words.length; j++) {
-      if (hitwords.includes(words[j])) {
-        fill("orange");
+    for (var j = 0; j < wordsH.length; j++) {
+      if (hitwords.includes(wordsH[j],wordsS[i])) {
+        fill(200, 100, 200);
       } else {
         fill(255)
       }
 
-      text(words[j]+' ', nextX, i*lineheight);
-      nextX += textWidth(words[j]+' ');
+      text(wordsH[j]+' ', nextX, i*lineheight);
+      //text(wordS[j], 500, i*lineheight);
+      nextX += textWidth(wordsH[j]+' ');
     }
+
+    text(wordsS[i], 500, 0);
+    // for (var j = 0; j < section.length; j++) {
+    //   if (hitwords.includes(section[j])) {
+    //     fill(200, 100, 200);
+    //   } else {
+    //     fill(255)
+    //   }
+
+    //   text(section[j]+' ', nextX, i*lineheight);
+    //   nextX += textWidth(section[j]+' ');
+    // }
   }
+
+  text(section, 500, 0);
 
   
 }
@@ -87,9 +108,9 @@ function extractHeadlines() {
 
   //console.log(nytResponse); // take a look at the full API response structure
 
-  for (var i = 0; i < (nytResponse.results.length)/2; i++) {
+  for (var i = 0; i < (nytResponse.results.length); i++) {
     var sec = nytResponse.results[i].section;
-    var ss = nytResponse.results[i].subsection;
+    //var ss = nytResponse.results[i].subsection;
     var h = nytResponse.results[i].title;
   
     // besides .title, other text data available to you include:
@@ -106,10 +127,11 @@ function extractHeadlines() {
     } else if (h.length < minHeadLen) {
       minHeadLen = h.length;
     }
+
     append(headlines, h);
-    append(subsection, ss);
+    //append(headlines, ss);
     append(section, sec);
-    //console.log(ss);
+    //console.log(sec);
   }
 
   //console.log(headlines); // make sure counted data looks as expected
