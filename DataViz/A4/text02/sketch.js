@@ -2,10 +2,16 @@
 
 var myFont;
 var headlines = [];
+var section = [];
+var subsection = [];
 var maxHeadLen, minHeadLen;
+var hitwords = [
+  "World",
+  "Olympic"
+];
 
 function preload() {
-  myFont = loadFont('LeagueMono-Light.ttf');
+  //myFont = loadFont('LeagueMono-Light.ttf');
 
   // Assemble url for API call
   var url = "https://api.nytimes.com/svc/topstories/v2/home.json";
@@ -21,7 +27,7 @@ function setup() {
   createCanvas(640, 800);
   background(0);
 
-  textSize(7);
+  textSize(10);
   //textFont(myFont);
   textAlign(LEFT);
 
@@ -37,28 +43,55 @@ function draw() {
   var margin = 40;
   translate(margin, margin);
 
-  var lineheight = 15;
+  var lineheight = 30;
   var rectheight = 8;
 
   for (var i = 0; i < headlines.length; i++) {
+    var words = split(headlines[i], ' ') + split(section[i], ' ') + split(subsection[i], ' ');
+    var nextX = 0;
+    //console.log(words);
 
     // draw rectangle
-    fill(120);
-    var rectwidth = map(headlines[i].length, minHeadLen, maxHeadLen, margin, width-margin*2);
-    rect(0, i*lineheight, rectwidth, -1*rectheight)
+    // fill(120);
+    // var rectwidth = map(headlines[i].length, minHeadLen, maxHeadLen, margin, width-margin-200);
+    // rect(0, i*lineheight, rectwidth, -1*rectheight)
 
-    // draw headline
-    fill(255);
-    text(headlines[i], 0, i*lineheight);
+    // draw headline, section, subsection
+    // fill(255);
+    // text(headlines[i], 0, i*lineheight);
+    // text(section[i], 450, i*lineheight);
+    // text(subsection[i], 500, i*lineheight);
+
+    // if (hitwords.includes(section[i])) {
+    //   fill("orange");
+    // } else {
+    //   fill(255);
+    // }
+
+    for (var j = 0; j < words.length; j++) {
+      if (hitwords.includes(words[j])) {
+        fill("orange");
+      } else {
+        fill(255)
+      }
+
+      text(words[j]+' ', nextX, i*lineheight);
+      nextX += textWidth(words[j]+' ');
+    }
   }
+
+  
 }
 
 function extractHeadlines() {
 
-  // console.log(nytResponse); // take a look at the full API response structure
+  //console.log(nytResponse); // take a look at the full API response structure
 
-  for (var i = 0; i < nytResponse.results.length; i++) {
+  for (var i = 0; i < (nytResponse.results.length)/2; i++) {
+    var sec = nytResponse.results[i].section;
+    var ss = nytResponse.results[i].subsection;
     var h = nytResponse.results[i].title;
+  
     // besides .title, other text data available to you include:
     // .abstract, .byline, .section, etc. etc.
 
@@ -74,9 +107,12 @@ function extractHeadlines() {
       minHeadLen = h.length;
     }
     append(headlines, h);
+    append(subsection, ss);
+    append(section, sec);
+    //console.log(ss);
   }
 
   //console.log(headlines); // make sure counted data looks as expected
   //console.log(maxHeadLen);
-  // console.log(minHeadLen);
+  //console.log(minHeadLen);
 }
