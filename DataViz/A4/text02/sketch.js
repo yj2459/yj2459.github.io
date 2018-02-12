@@ -20,7 +20,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(640, 850);
+  createCanvas(640, 1100);
   background(0);
 
   textSize(10);
@@ -43,9 +43,9 @@ function draw() {
   text("!No way!", width*(2/3), 80);
   pop();
 
-  var lineheight = 20;
+  var lineheight = 26;
   var margin = 40;
-  translate(margin, margin);
+  translate(margin, margin + 10);
 
   //TOP stories
   push();
