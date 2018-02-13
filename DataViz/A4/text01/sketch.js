@@ -1,13 +1,13 @@
 //Question :: How to load font ? .ttf
 
-var myFont;
+//var myFont;
 var headlines = [];
 var section = [];
 var subsection = [];
 var maxHeadLen, minHeadLen;
 
 function preload() {
-  //myFont = loadFont('LeagueMono-Light.ttf');
+  //myFont = loadFont('assets/Avenir.otf');
 
   // Assemble url for API call
   var url = "https://api.nytimes.com/svc/topstories/v2/home.json";
