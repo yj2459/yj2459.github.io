@@ -19,7 +19,7 @@ function setup() {
 }
 
 function loadData() {
-  var rVolume = table.getColume("Volume");
+  var rVolume = table.getColumn("Volume");
 
   for(var i = 0; i < rVolume.length; i++){
     reservoirVolume[rVolume[i]]++;
