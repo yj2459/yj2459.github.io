@@ -45,7 +45,7 @@ function draw() {
   background(255);
 
   textSize(15);
-  text("hello", 0, 30);
+  text("hello");
 
   
 }
@@ -63,9 +63,9 @@ function loadData() {
   textshow= preV
 
   // loadTable automatically ignores header row so we can start index at 0
-  // for (var i=0; i<preV.length; i++) {
-  //    griefData[griefDS[i]] = [ preV[i], values[i] ];
-  //   }
+  for (var i=0; i<preV.length; i++) {
+     griefData[griefDS[i]] = [ preV[i], values[i] ];
+    }
 
   console.log(preV)
   //maxWater = [ max(sum2015), max(avg2015), max(sum2016), max(avg2016) ];
