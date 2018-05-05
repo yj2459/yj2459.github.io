@@ -1,10 +1,5 @@
-//Question: 1. Sum 2. mouseClick loop smart way 3. mouseCliked-rect
-
-
 var table_post; 
-//var table_pre;
 var griefData;
-//var preDeterminants = [];
 var postDeterminants = [];
 var griefvalues;
 var totalP = [];
