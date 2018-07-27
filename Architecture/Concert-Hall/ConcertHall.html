@@ -2,15 +2,15 @@
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<head>
-		<title>you-wow.Concert Hall</title>
+		<title>you-wow.concert hall</title>
 		<style>
 		.div {
     		border: 1px solid black;
     		background-color: lightblue;
-    		padding-top: 80px;
-    		padding-right: 100px;
+    		padding-left: 12%;
+    		padding-right: 10%;
+    		padding-top: 130px;
     		padding-bottom: 80px;
-    		padding-left: 100px;
 		}
 
 		/*link*/
@@ -28,30 +28,137 @@
 
 		body {
     		background-color: tomato;
-    		font-family: Verdana, sans-serif; 
-    		margin:10
+    		font-family: Trebuchet MS, Verdana; 
+    		margin:10px
 		}
 
 		h1 {
 			display: inline;
     		color: white;
     		text-align:left;
-    		font-family:Gill Sans,Symbol;
 		}
 
 		p {
-    		display: inline;
-    		text-align: justify;
-    		font-family: Gill Sans, Symbol;
-    		font-size: 13px;	
+    		display: block;
+    		text-align: center;
+    		font-size: 10px;	
 		}
-
 
 		.text{
 			height: 200px;
 		    width: 50%;
 		    /*background-color: powderblue;*/
 		}
+
+		.context{
+			display: block;
+			text-align: right;
+			margin-left: auto;
+		    margin-right: auto;
+		    width: 90%;
+		}
+
+		
+		/*slide show*/
+
+		* {
+		  box-sizing: border-box;
+		}
+
+		img {
+		  vertical-align: middle;
+		}
+
+		/* Position the image container (needed to position the left and right arrows) */
+		.container {
+		  position: relative;
+		}
+
+		/* Hide the images by default */
+		.mySlides {
+		  display: none;
+		  align-content: center;
+		}
+
+
+
+		/* Add a pointer when hovering over the thumbnail images */
+		.cursor {
+		  cursor: pointer;
+		}
+
+		/* Next & previous buttons */
+		.prev,
+		.next {
+		  cursor: pointer;
+		  position: absolute;
+		  top: 40%;
+		  width: auto;
+		  padding: 16px;
+		  margin-top: -50px;
+		  color: white;
+		  font-weight: bold;
+		  font-size: 20px;
+		  border-radius: 0 3px 3px 0;
+		  user-select: none;
+		  -webkit-user-select: none;
+		}
+
+		/* Position the "next button" to the right */
+		.next {
+		  right: 0;
+		  border-radius: 3px 0 0 3px;
+		}
+
+		/* On hover, add a black background color with a little bit see-through */
+		.prev:hover,
+		.next:hover {
+		  background-color: rgba(0, 0, 0, 0.8);
+		}
+
+		/* Number text (1/3 etc) */
+		.numbertext {
+		  color: #f2f2f2;
+		  font-size: 12px;
+		  padding: 8px 12px;
+		  position: absolute;
+		  top: 0;
+		}
+
+		.row:after {
+		  content: "";
+		  display: table;
+		  clear: both;
+		}
+
+		/* Six columns side by side */
+		.column {
+		  float: left;
+		  width: 25%;
+		}
+
+		/* Add a transparency effect for thumnbail images */
+		.demo {
+		  opacity: 0.6;
+		}
+
+		.active,
+		.demo:hover {
+		  opacity: 1;
+		}
+
+		.center {
+		    display: block;
+		    margin-left: auto;
+		    margin-right: auto;
+		    width: 50%;
+		}
+
+
+
+
+
+
 
 		
 		</style>
@@ -60,12 +167,12 @@
 
 
 	<body>
-		<div class="div">
+	<div class="div">
 
-		<h1> <a href="../../index.html"> you-wow </a></h1>
+		<h1 style="font-family: Trebuchet MS; font-style: italic;"> <a href="../../index.html"> you-wow </a></h1>
 
 
-		<p style="margin-left: 60%; word-spacing: 20px;">
+		<p style="font-family: Trebuchet MS; font-size: 12px; word-spacing: 20px;" class="context">
 		<a href="../Architecture.html"> Architecture </a>
 		<a href="../../Installation/Installation.html"> Installation </a>
 		<a href="../../Research/Research.html"> Research </a>
@@ -73,34 +180,107 @@
 		</p>
 
 
+	</br></br></br>
+	</br></br></br>
+
+
+
+		<h2 style="font-family: Courier New; font-style: italic; font-weight: lighter; text-align: center;"> Dispersion of Energy </h2>
+
 	</br></br></br></br>
-	</br></br></br></br></br></br>
-	<h2 style="font-family: Courier New; font-style: italic; font-weight: lighter;"> Dispersion of Energy </h2></br></br>
 
 
-		<div class="text">
-		<p style="margin-left: 100px;"> Main concept of the project is emitting light. I believe that light have a power to attract people and make itself interesting. Communication center should be similar with light in terms of drawing people to come to the place. By squeezing a towel with a lamp inside, the light come out to the outside which stimulate people’s interest.
-		</br></br>
 
-		Day and night programs were classified vertically by considering the characteristics of different sites of the day and night. The ground floor is for an afternoon program to give off a bright light at night and the space of concert hall and lobby for it, and other space for staffs to prepare the concert were arranged. 
+		<div class="container">
+		  <div class="mySlides">
+		    <div class="numbertext">1 / 4</div>
+		    <img src="web_8.png" style="width:80%" class="center">
+		  </div>
+
+		  <div class="mySlides">
+		    <div class="numbertext">2 / 4</div>
+		    <img src="web_9.png" style="width:80%" class="center">
+		  </div>
+
+		  <div class="mySlides">
+		    <div class="numbertext">3 / 4</div>
+		    <img src="web_10.png" style="width:80%" class="center">
+		  </div>
+		    
+		  <div class="mySlides">
+		    <div class="numbertext">4 / 4</div>
+		    <img src="web_11.png" style="width:80%" class="center">
+		  </div>
+
+		  <a class="prev" onclick="plusSlides(-1)">❮</a>
+		  <a class="next" onclick="plusSlides(1)">❯</a>
+
 		</br>
-		The first floor of the skip floor is for the program that is used all day and community facilities such as cafes, restaurants and bars are created.In the basement, music library and music lesson rooms are arranged to use them during the day.
-		</p>
+
+		<div class="center">
+		  <div class="row">
+		    <div class="column">
+		    	<img class="demo cursor" src="web_8.png" style="width:100%" onclick="currentSlide(1)">
+		    </div>
+		    <div class="column">
+		      <img class="demo cursor" src="web_9.png" style="width:100%" onclick="currentSlide(2)">
+		    </div>
+		    <div class="column">
+		      <img class="demo cursor" src="web_10.png" style="width:100%" onclick="currentSlide(3)">
+		    </div>
+		    <div class="column">
+		      <img class="demo cursor" src="web_11.png" style="width:100%" onclick="currentSlide(4)">
+		    </div>
+		  </div>
 		</div>
 
-		</br>
-		</br></br><img src="render.jpg" style="width: 50%;">
-		</br></br><img src="concept.gif" style="width: 50%;">
-		</br></br><img src="site.jpg" style="width: 50%;">
-		</br></br><img src="plans.jpg" style="width: 50%;">
-		</br></br><img src="section.jpg" style="width: 50%;">
-
-		</br></br>
-		</br></br>
-		<p style="font-weight: lighter;"> © 2018 Rhea | Yuhwa Jeong. All Rights Reserved | you-wow.design </p>
-
 
 
 		</div>
+
+
+			</br></br>
+			</br></br>
+			<p style="font-family: Courier New; font-weight: lighter;"> © 2018 Rhea | Yuhwa Jeong. All Rights Reserved | you-wow.space </p>
+
+
+
+	</div>
+
+
+		<script>
+
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("demo");
+		  var captionText = document.getElementById("caption");
+		  if (n > slides.length) {slideIndex = 1}
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+		      slides[i].style.display = "none";
+		  }
+		  for (i = 0; i < dots.length; i++) {
+		      dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";
+		  dots[slideIndex-1].className += " active";
+		  captionText.innerHTML = dots[slideIndex-1].alt;
+		}
+
+
+
+		</script>
 	</body>
 </html>

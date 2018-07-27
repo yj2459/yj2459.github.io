@@ -7,10 +7,10 @@
 		.div {
     		border: 1px solid black;
     		background-color: lightblue;
-    		padding-top: 80px;
-    		padding-right: 100px;
+    		padding-left: 12%;
+    		padding-right: 10%;
+    		padding-top: 130px;
     		padding-bottom: 80px;
-    		padding-left: 100px;
 		}
 
 		/*link*/
@@ -28,7 +28,7 @@
 
 		body {
     		background-color: tomato;
-    		font-family: Verdana, sans-serif; 
+    		font-family: Trebuchet MS, Verdana; 
     		margin:10
 		}
 
@@ -36,14 +36,12 @@
 			display: inline;
     		color: white;
     		text-align:left;
-    		font-family:Gill Sans,Symbol;
 		}
 
 		p {
-    		display: inline;
-    		text-align: justify;
-    		font-family: Gill Sans, Symbol;
-    		font-size: 13px;	
+    		display: block;
+    		text-align: center;
+    		font-size: 10px;	
 		}
 
 		.text{
@@ -53,17 +51,48 @@
 		}
 
 		.thumnail{
+			display: table;
 			font-size: 12px; 
-			margin-left: 100px;
-			margin-right: 100px;
-			margin-top: 40px;
-			margin-bottom: 10px;
+			margin-left: auto;
+			margin-right: auto;
+			/*margin-top: 20px;
+			margin-bottom: 10px;*/
 			word-spacing: 20px;
 		}
 
+		.context{
+			display: block;
+			text-align: right;
+			margin-left: auto;
+		    margin-right: auto;
+		    width: 90%;
+		}
 
+		.row:after {
+		  content: "";
+		  display: table;
+		  clear: both;
+		}
 
-		
+		.column {
+		  float: left;
+		  width: 30%;
+		  margin-bottom: 16px;
+    	  padding: 0 8px;
+		}
+
+		.center {
+		    display: block;
+		    margin-left: auto;
+		    margin-right: auto;
+		    width: 100%;
+		}
+
+		.container {
+		    padding: 0 16px;
+		}
+				
+
 		</style>
 	</head>
 	
@@ -72,41 +101,26 @@
 	<body>
 		<div class="div">
 
-		<h1> <a href="../index.html"> you-wow </a></h1>
+		<h1 style="font-family: Trebuchet MS; font-style: italic;"> <a href="../index.html"> you-wow </a></h1>
 		
-		<p style="margin-left: 60%; word-spacing: 20px;">
-		<a href="Architecture.html"> Architecture </a>
-		<a href="../Installation/Installation.html"> Installation </a>
+		<p style="font-family: Trebuchet MS; font-size: 12px; word-spacing: 20px;" class="context">
+		<a href="../Architecture/Architecture.html"> Architecture </a>
+		<a href="Installation.html"> Installation </a>
 		<a href="../Research/Research.html"> Research </a>
 		<a href="../About/About.html"> About </a>
 		</p>
 
 
 	</br></br></br></br></br>
-	</br></br></br></br></br>
+	</br></br>
 
-	<div class="thumnail">
-		<a href="Residential/Cheongdam.html"><img src="Residence-in-cheongdam.jpg" style="width: 30%"></a>
-		<a href="Cemetery/Cemetery.html"><img src="Life-and-Death.jpg" style="width: 30%"></a>
-		<a href="Share-the-Horizon/Horizon.html"><img src="Share-the-Horizon.jpg" style="width: 30%"></a>
-	</div>
+	
+		<h1 style="text-align: center;" class="center">...C O M I N G <span style="margin-left: 30px;"></span> S O O N... :)</h1>
 
-		<p style="padding-left: 190px; font-weight: lighter;"> Residence in Cheongdam </p>
-		<p style="padding-left: 190px; font-weight: lighter;"> Vulnerability : Life and Death </p>
-		<p style="padding-left: 190px; font-weight: lighter;""> Share the Horizon </p>
+		</br></br></br></br>
 
-	<div class="thumnail">
-		<a href="Lee-Ufan-Gallery/LeeUfan.html"><img src="Lee Ufan Gallery.jpg" style="width: 30%"></a>
-		<a href="Mapo-Oil-Depot/Mapo.html"><img src="Mapo-Oil-Depot-Renovation.jpg" style="width: 30%"></a>
-		<a href="Concert-Hall/ConcertHall.html"><img src="Dispersion-of-Energy.jpg" style="width: 30%"></a>
-	</div>
-
-		<p style="padding-left: 210px; font-weight: lighter;"> Lee Ufan Gallery </p>
-		<p style="padding-left: 233px; font-weight: lighter;"> Mapo Oil Depot </p>
-		<p style="padding-left: 230px; font-weight: lighter;""> Dispersion of Energy </p>
-
-
-
+		</br></br></br>
+		<p style="font-family: Courier New; font-weight: lighter;"> © 2018 Rhea | Yuhwa Jeong. All Rights Reserved | you-wow.design </p>
 
 
 

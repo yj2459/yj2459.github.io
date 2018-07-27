@@ -7,10 +7,10 @@
 		.div {
     		border: 1px solid black;
     		background-color: lightblue;
-    		padding-top: 80px;
-    		padding-right: 100px;
+    		padding-left: 12%;
+    		padding-right: 10%;
+    		padding-top: 130px;
     		padding-bottom: 80px;
-    		padding-left: 100px;
 		}
 
 		/*link*/
@@ -28,30 +28,137 @@
 
 		body {
     		background-color: tomato;
-    		font-family: Verdana, sans-serif; 
-    		margin:10
+    		font-family: Trebuchet MS, Verdana; 
+    		margin:10px
 		}
 
 		h1 {
 			display: inline;
     		color: white;
     		text-align:left;
-    		font-family:Gill Sans,Symbol;
 		}
 
 		p {
-    		display: inline;
-    		text-align: justify;
-    		font-family: Gill Sans, Symbol;
-    		font-size: 13px;	
+    		display: block;
+    		text-align: center;
+    		font-size: 10px;	
 		}
-
 
 		.text{
 			height: 200px;
 		    width: 50%;
 		    /*background-color: powderblue;*/
 		}
+
+		.context{
+			display: block;
+			text-align: right;
+			margin-left: auto;
+		    margin-right: auto;
+		    width: 90%;
+		}
+
+		
+		/*slide show*/
+
+		* {
+		  box-sizing: border-box;
+		}
+
+		img {
+		  vertical-align: middle;
+		}
+
+		/* Position the image container (needed to position the left and right arrows) */
+		.container {
+		  position: relative;
+		}
+
+		/* Hide the images by default */
+		.mySlides {
+		  display: none;
+		  align-content: center;
+		}
+
+
+
+		/* Add a pointer when hovering over the thumbnail images */
+		.cursor {
+		  cursor: pointer;
+		}
+
+		/* Next & previous buttons */
+		.prev,
+		.next {
+		  cursor: pointer;
+		  position: absolute;
+		  top: 40%;
+		  width: auto;
+		  padding: 16px;
+		  margin-top: -50px;
+		  color: white;
+		  font-weight: bold;
+		  font-size: 20px;
+		  border-radius: 0 3px 3px 0;
+		  user-select: none;
+		  -webkit-user-select: none;
+		}
+
+		/* Position the "next button" to the right */
+		.next {
+		  right: 0;
+		  border-radius: 3px 0 0 3px;
+		}
+
+		/* On hover, add a black background color with a little bit see-through */
+		.prev:hover,
+		.next:hover {
+		  background-color: rgba(0, 0, 0, 0.8);
+		}
+
+		/* Number text (1/3 etc) */
+		.numbertext {
+		  color: #f2f2f2;
+		  font-size: 12px;
+		  padding: 8px 12px;
+		  position: absolute;
+		  top: 0;
+		}
+
+		.row:after {
+		  content: "";
+		  display: table;
+		  clear: both;
+		}
+
+		/* Six columns side by side */
+		.column {
+		  float: left;
+		  width: 20%;
+		}
+
+		/* Add a transparency effect for thumnbail images */
+		.demo {
+		  opacity: 0.6;
+		}
+
+		.active,
+		.demo:hover {
+		  opacity: 1;
+		}
+
+		.center {
+		    display: block;
+		    margin-left: auto;
+		    margin-right: auto;
+		    width: 50%;
+		}
+
+
+
+
+
+
 
 		
 		</style>
@@ -60,12 +167,12 @@
 
 
 	<body>
-		<div class="div">
+	<div class="div">
 
-		<h1> <a href="../../index.html"> you-wow </a></h1>
+		<h1 style="font-family: Trebuchet MS; font-style: italic;"> <a href="../../index.html"> you-wow </a></h1>
 
 
-		<p style="margin-left: 60%; word-spacing: 20px;">
+		<p style="font-family: Trebuchet MS; font-size: 12px; word-spacing: 20px;" class="context">
 		<a href="../Architecture.html"> Architecture </a>
 		<a href="../../Installation/Installation.html"> Installation </a>
 		<a href="../../Research/Research.html"> Research </a>
@@ -73,37 +180,115 @@
 		</p>
 
 
+	</br></br></br>
+	</br></br></br>
+
+
+
+		<h2 style="font-family: Courier New; font-style: italic; font-weight: lighter; text-align: center;"> Share the Horizon </h2>
+
 	</br></br></br></br>
-	</br></br></br></br></br></br>
-	<h2 style="font-family: Courier New; font-style: italic; font-weight: lighter;"> Share the Horizon </h2></br></br>
 
 
-		<div class="text">
-			<p style="margin-left: 100px;"> This is a proposal of new building type in the dense city such as seoul and new york. The social condition that OPH(one person housing) and start-up companies are trendy is the main issue. Those small sized activities/communities can be packed in well-organized building type. The main purpose is to mix them in a smart way and to advance the housing quality.
-			</br></br>
 
-			As the residence forms a facade, a detailed study of the facade was needed. Because of the privacy of the residence, the gaze from the outside must be blocked, but the view from the inside must be maintained, so the facade should be realized with a system that will harmonize it appropriately. By applying the characteristics of the see-through, it is designed that the field of view to be blocked to some extent from the angle other than the front. I chose a thin but strong cable for aesthetic and functional roles as well as structural roles. The various types of residence building that are visible through tight cable gaps will also address the concerns about the apartment’s consistent facade.
-			</p>
+		<div class="container">
+		  <div class="mySlides">
+		    <div class="numbertext">1 / 5</div>
+		    <img src="web_16.png" style="width:80%" class="center">
+		  </div>
 
-			</br></br></br>
-			<p style="font-style: italic;">
-				<a href="http://www.studioleeufan.org/"> >Lee Ufan studio< </a>
-			</p>
-		</div>
+		  <div class="mySlides">
+		    <div class="numbertext">2 / 5</div>
+		    <img src="web_17.png" style="width:80%" class="center">
+		  </div>
+
+		  <div class="mySlides">
+		    <div class="numbertext">3 / 5</div>
+		    <img src="web_18.png" style="width:80%" class="center">
+		  </div>
+
+		  <div class="mySlides">
+		    <div class="numbertext">4 / 5</div>
+		    <img src="web_19.png" style="width:80%" class="center">
+		  </div>
+
+		  <div class="mySlides">
+		    <div class="numbertext">5 / 5</div>
+		    <img src="web_20.png" style="width:80%" class="center">
+		  </div>
+		    
+		  <a class="prev" onclick="plusSlides(-1)">❮</a>
+		  <a class="next" onclick="plusSlides(1)">❯</a>
 
 		</br>
-		</br></br><img src="model.jpg" style="width: 50%;">
-		</br></br><img src="axon.jpg" style="width: 50%;">
-		</br></br><img src="plan.jpg" style="width: 50%;">
-		</br></br><img src="plan-base.jpg" style="width: 50%;">
-		</br></br><img src="detail-section.jpg" style="width: 50%;">
 
-		</br></br>
-		</br></br>
-		<p style="font-weight: lighter;"> © 2018 Rhea | Yuhwa Jeong. All Rights Reserved | you-wow.design </p>
+		<div class="center">
+		  <div class="row">
+		    <div class="column">
+		    	<img class="demo cursor" src="web_16.png" style="width:100%" onclick="currentSlide(1)">
+		    </div>
+		    <div class="column">
+		      <img class="demo cursor" src="web_17.png" style="width:100%" onclick="currentSlide(2)">
+		    </div>
+		    <div class="column">
+		      <img class="demo cursor" src="web_18.png" style="width:100%" onclick="currentSlide(3)">
+		    </div>
+		    <div class="column">
+		      <img class="demo cursor" src="web_19.png" style="width:100%" onclick="currentSlide(4)">
+		    </div>
+		    <div class="column">
+		      <img class="demo cursor" src="web_20.png" style="width:100%" onclick="currentSlide(5)">
+		    </div>
+		  </div>
+		</div>
 
 
 
 		</div>
+
+
+			</br></br>
+			</br></br>
+			<p style="font-family: Courier New; font-weight: lighter;"> © 2018 Rhea | Yuhwa Jeong. All Rights Reserved | you-wow.space </p>
+
+
+
+	</div>
+
+
+		<script>
+
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("demo");
+		  var captionText = document.getElementById("caption");
+		  if (n > slides.length) {slideIndex = 1}
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+		      slides[i].style.display = "none";
+		  }
+		  for (i = 0; i < dots.length; i++) {
+		      dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";
+		  dots[slideIndex-1].className += " active";
+		  captionText.innerHTML = dots[slideIndex-1].alt;
+		}
+
+
+
+		</script>
 	</body>
 </html>
