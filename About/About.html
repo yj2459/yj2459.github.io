@@ -3,14 +3,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<head>
 		<title>you-wow.About</title>
-		<style>
+<style>
 		.div {
     		/*border: 1px solid black;
     		background-color: lightblue;*/
     		padding-left: 12%;
     		padding-right: 10%;
-    		padding-top: 130px;
-    		padding-bottom: 80px;
+    		padding-top: 9%;
+    		padding-bottom: 10%;
 		}
 
 		/*link*/
@@ -29,44 +29,65 @@
 		body {
     		/*background-color: tomato;*/
     		font-family: Trebuchet MS, Verdana; 
-    		margin:10px
+    		margin:10px;
 		}
 
 		h1 {
 			display: inline;
-    		color: white;
+    		color: black;
     		text-align:left;
 		}
 
 		p {
-    		display: inline;
+    		display: block;
     		text-align: center;
     		font-size: 10px;	
 		}
 
-		.context{
-			display: block;
+		.p_context{
+			font-family: Trebuchet MS; 
+			font-size: 12px; 
+			word-spacing: 20px; 
+			margin-left: 12%;
 			text-align: right;
-			margin-left: auto;
-		    margin-right: auto;
-		    width: 90%;
 		}
 
-		.center {
-		    display: block;
-		    margin-left: auto;
-		    margin-right: auto;
-		    width: 100%;
-		}
-
-
-		.info{
+		.p_copyright{
+			font-family: Courier New; 
+			font-weight: lighter;
 			text-align: center;
-			margin-right: 70px;
-			font-size: 15px;
-			/*font-weight: lighter; */
 		}
-				
+
+		* {box-sizing: border-box;}
+
+		[class*="col-"] {
+		    float: left;
+		    padding: 1%;
+		    /*border: 1px solid red;*/
+		}
+		.col-1 {width: 8.33%;}
+		.col-2 {width: 16.66%;}
+		.col-3 {width: 25%;}
+		.col-4 {width: 33.33%;}
+		.col-5 {width: 41.66%;}
+		.col-6 {width: 50%;}
+		.col-7 {width: 58.33%;}
+		.col-8 {width: 66.66%;}
+		.col-9 {width: 75%;}
+		.col-10 {width: 83.33%;}
+		.col-11 {width: 91.66%;}
+		.col-12 {width: 100%;}
+
+		.box{
+			width: 100%;
+			height: 200px;
+		}
+
+		.row::after {
+		  content: "";
+		  display: table;
+		  clear: both;
+		}	
 
 		</style>
 	</head>
@@ -76,47 +97,54 @@
 	<body>
 		<div class="div">
 
-		<h1 style="font-family: Trebuchet MS; font-style: italic; margin-left: 50px;"> <a href="../index.html"> you-wow </a></h1>
+		<div class="col-5">
+			<h1 style="font-family: Trebuchet MS; font-style: italic;"> <a href="../index.html"> you-wow </a></h1>
+		</div>
 		
-		<p style="font-family: Trebuchet MS; font-size: 12px; word-spacing: 20px;" class="context">
-		<a href="../Architecture/Architecture.html"> Architecture </a>
-		<a href="../Installation/Installation.html"> Installation </a>
-		<a href="../Research/Research.html"> Research </a>
-		<a href="About.html"> About </a>
-		</p>
+		<div class="col-7">
+			<p class="p_context">
+			<a href="../Architecture/Architecture.html"> Architecture </a>
+			<a href="../Installation/Installation.html"> Installation </a>
+			<a href="../Research/Research.html"> Research </a>
+			<a href="About.html"> About </a>
+			</p>
+		</div>
 
 
 	</br></br></br>
 	</br></br></br>
-	<h2 style="font-family: Courier New; font-style: italic; font-weight: lighter; text-align: center; margin-right: 70px;"> Yuhwa Jeong </h2></br>
+
+	<div class="row">
+	<div class="box">
+		<div class="col-12" style="text-align: center">
+
+		<h2 class="p_copyright"> Yuhwa Jeong </h2></br>
 
 
-	<div class="info">
+			</br><img src="location.png" style="width: 2.5%"><p style="font-size: 13px; display: inline;"><span style="padding-left:30px;">New York/Seoul</a></span></p>
 
-		</br><img src="location.png" style="width: 2.5%"><p style="font-size: 13px;"><span style="padding-left:30px;">New York/Seoul</a></span></p>
+			</br><img src="email.png" style="width: 3%"><p style="font-size: 13px; display: inline;"><span style="padding-left:30px;"><a href="mailto:yoowha3@gmail.com">gmail/yoowha3</a></span></p>
+			
+			</br><img src="linkedin.png" style="width: 3%"><p style="font-size: 13px; display: inline;"><span style="padding-left:30px;"><a href="www.linkedin.com/in/yuhwa/">linkedin/yuhwa</a></span></p>
+			
+			</br><img src="instagram.png" style="width: 3%"><p style="font-size: 13px; display: inline;"><span style="padding-left:30px;"><a href="https://www.instagram.com/newwwha/">insta/newwwha</a></span></p>
 
-		</br><img src="email.png" style="width: 3%"><p style="font-size: 13px;"><span style="padding-left:30px;"><a href="mailto:yoowha3@gmail.com">gmail/yoowha3</a></span></p>
-		
-		</br><img src="linkedin.png" style="width: 3%"><p style="font-size: 13px;"><span style="padding-left:30px;"><a href="www.linkedin.com/in/yuhwa/">linkedin/yuhwa</a></span></p>
-		
-		</br><img src="instagram.png" style="width: 3%"><p style="font-size: 13px;"><span style="padding-left:30px;"><a href="https://www.instagram.com/newwwha/">insta/newwwha</a></span></p>
+			</br></br>
+			<img src="yuhwa.gif" style="width: 100%">
+			</br>
+
+		</div>
+	</div>
+	</div>
+
 
 	</div>
 
-		</br></br>
-		<img src="yuhwa.gif" style="width: 100%">
-		</br></br>
-
-
-
-		</br></br></br></br>
-
-		</br></br></br>
-		<p style="font-family: Courier New; font-weight: lighter; display: block;"> © 2018 Rhea | Yuhwa Jeong. All Rights Reserved | you-wow.space </p>
+		<p class="p_copyright" style="display: block;"> © 2018 Rhea | Yuhwa Jeong. All Rights Reserved | you-wow.space </p>
 
 
 
 
-		</div>
+	
 	</body>
 </html>
